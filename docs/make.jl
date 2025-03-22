@@ -1,23 +1,15 @@
-using PkgTest
 using Documenter
+using PkgTest
 
-DocMeta.setdocmeta!(PkgTest, :DocTestSetup, :(using PkgTest); recursive=true)
-
-makedocs(;
-    modules=[PkgTest],
-    authors="Pablo Rubial, Victoria Méndez",
-    sitename="PkgTest.jl",
-    format=Documenter.HTML(;
-        canonical="https://pablorubial.github.io/PkgTest.jl",
-        edit_link="main",
-        assets=String[],
-    ),
-    pages=[
-        "Home" => "index.md",
-    ],
+makedocs(
+    sitename = "PkgTest",
+    format = Documenter.HTML(),
+    modules = [PkgTest]
 )
 
-deploydocs(;
-    repo="github.com/pablorubial/PkgTest.jl",
-    devbranch="main",
-)
+# Documenter can also automatically deploy documentation to gh-pages.
+# See "Hosting Documentation" and deploydocs() in the Documenter manual
+# for more information.
+#=deploydocs(
+    repo = "<repository url>"
+)=#

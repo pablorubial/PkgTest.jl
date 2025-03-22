@@ -1,14 +1,3 @@
-```@meta
-CurrentModule = PkgTest
-```
+# PkgTest.jl
 
-# PkgTest
-
-Documentation for [PkgTest](https://github.com/pablorubial/PkgTest.jl).
-
-```@index
-```
-
-```@autodocs
-Modules = [PkgTest]
-```
+Documentation for PkgTest.jl
