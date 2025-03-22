@@ -2,9 +2,13 @@ using Documenter
 using PkgTest
 
 makedocs(
-    sitename = "PkgTest",
+    sitename = "PkgTest.jl",
     format = Documenter.HTML(),
-    modules = [PkgTest]
+    modules = [PkgTest],
+    pages = [
+        "Home" => "index.md",
+        "Reference" => "reference.md"
+    ],
 )
 
 # Documenter can also automatically deploy documentation to gh-pages.

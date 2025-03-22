@@ -1,5 +1,11 @@
 module PkgTest
 
-# Write your package code here.
+include("Hello.jl")
 
+using PkgTest.Hello: hello, goodbye
+
+
+export hello, goodbye
+
+# Write your package code here.
 end
